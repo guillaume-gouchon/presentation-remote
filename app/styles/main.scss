@@ -1,0 +1,67 @@
+
+strong {
+	color : #e7ad52;
+}
+
+.hide {
+	display:none!important;
+}
+
+.navigate-up, .navigate-down {
+	display: none;
+}
+
+#remote {
+	font-family: "Montserrat", Impact, sans-serif;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	text-align:center;
+	color: #eee;
+
+	button {
+		font-family: "Montserrat", Impact, sans-serif;
+		height: 60px;
+		width: 60%;
+		line-height: 60px;
+		margin: 40px 0px;
+		font-size: 2.0em;
+		background: #eee;
+		border-radius: 5px;
+		border: 0px;
+		outline: 0px;
+		padding: 0px;
+
+		&:focus {
+			background: #aaa;
+		}
+	}
+
+	#timer {
+		line-height: 60px;
+		width: 100%;
+		font-size: 3.5em;
+		letter-spacing: 3px;
+		margin: 40px 0px;
+	}
+
+	hr {
+		margin: 0px 5px;
+	}
+
+	#next {
+		color: #ccc;
+		text-align: left;
+		padding-left: 20px;
+		text-decoration: underline;
+	}
+
+	#nextSlide {
+	}
+
+	#progress {
+		font-size: 2.0em;
+	}
+}

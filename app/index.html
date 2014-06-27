@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" manifest="prezz.appcache"> <!--<![endif]-->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Presentation</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Guillaume Gouchon">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" sizes="196x196" href="images/icon.png">
+    <link rel="icon" sizes="128x128" href="images/icon_128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="images/icon_128.png">
+
+		<!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="styles/libs/reveal.min.css">
+		<link rel="stylesheet" href="styles/libs/night.css" id="theme">
+		<link rel="stylesheet" href="styles/libs/zenburn.css">
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+		
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="styles/libs/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="scripts/libs/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Awesome Stylish Presentation</h2>
+					<br/>
+					<img alt="Chuck !" src="images/chuck.jpg"/>
+					<br/><br/>
+					<h4>including a super <strong>Remote Controller</strong> Web-app !</h4>
+					<br/><br/>
+					<p>
+						<small>Author : <a href="http://gouchon.com" target="_blank">Guillaume Gouchon</a>&nbsp;&nbsp;-&nbsp;&nbsp;Software Engineer&nbsp;&nbsp;&nbsp;&nbsp;</small>
+					</p>
+				</section>				
+
+				<section>
+					<h3>Thanks for listening !</h3>
+					<p>
+						<img src="images/christophe.jpg"/>
+					</p>
+					<br/><br/>
+					<h4>Questions time</h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<div id="remote" class="hide">
+				<button id="startTimer">Start !</button>
+				<h3 id="timer" class="hide">0:00</h3>
+				<hr/>
+				<h3 id="progress"></h3>
+				<hr/>
+				<h4 id="next">Next</h4>
+				<div id="nextSlide"></div>
+		</div>
+
+    <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+
+		<!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script type="application/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <script type="application/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="application/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script type="application/javascript" src="scripts/libs/head.min.js"></script>
+    <script type="application/javascript" src="scripts/libs/reveal.min.js"></script>
+    <script type="application/javascript" src="scripts/libs/html5shiv.js"></script>
+    <script type="application/javascript" src="scripts/libs/jquery.touchswipe.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script type="application/javascript" src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+	</body>
+</html>
