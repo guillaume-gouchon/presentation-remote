@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" manifest="prezz.appcache"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +22,11 @@
     <link rel="apple-touch-icon" sizes="128x128" href="images/icon_128.png">
 
 		<!-- build:css styles/vendor.css -->
-    <link rel="stylesheet" href="styles/libs/reveal.min.css">
-		<link rel="stylesheet" href="styles/libs/night.css" id="theme">
-		<link rel="stylesheet" href="styles/libs/zenburn.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
     <!-- endbuild -->
+
+  	<link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
 
     <!-- build:css(.tmp) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
@@ -33,11 +34,11 @@
 		
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="styles/libs/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
 		<!--[if lt IE 9]>
-		<script src="scripts/libs/html5shiv.js"></script>
+		<script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 
@@ -90,9 +91,8 @@
     <script type="application/javascript" src="bower_components/modernizr/modernizr.js"></script>
     <script type="application/javascript" src="bower_components/jquery/jquery.js"></script>
     <script type="application/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script type="application/javascript" src="scripts/libs/head.min.js"></script>
-    <script type="application/javascript" src="scripts/libs/reveal.min.js"></script>
-    <script type="application/javascript" src="scripts/libs/html5shiv.js"></script>
+    <script type="application/javascript" src="bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script type="application/javascript" src="bower_components/reveal.js/js/reveal.min.js"></script>
     <script type="application/javascript" src="scripts/libs/jquery.touchswipe.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

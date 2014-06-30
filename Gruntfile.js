@@ -13,7 +13,6 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.loadNpmTasks('grunt-ftp-deploy');
-    grunt.loadNpmTasks('grunt-appcache');
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
@@ -309,7 +308,8 @@ module.exports = function (grunt) {
                         '{,*/}*.html',
                         'fonts/{,*/}*.*',
                         'sounds/{,*/}*.*',
-                        'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
+                        'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*',
+                        'bower_components/reveal.js/**/*'
                     ]
                 }]
             },
@@ -364,17 +364,6 @@ module.exports = function (grunt) {
             dest: '/prezzz',
             exclusions: []
           }
-        },
-
-        appcache: {
-            options: {
-              basePath: '<%= yeoman.dist %>/'
-            },
-            all: {
-              dest: '<%= yeoman.dist %>/prezz.appcache',
-              cache: '<%= yeoman.dist %>/**/*',
-              network: '*'
-            }
         }
     });
 
@@ -425,8 +414,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin',
-        'appcache'
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [
